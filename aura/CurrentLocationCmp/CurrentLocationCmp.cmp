@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global"
+                controller="CurrentLocationController">
+    <aura:attribute name="mapMarkers" type="Object[]"/>
+    <aura:attribute name="zoomLevel" type="Integer" />
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <aura:attribute name="contactRec" type="Contact"/>
+    <div class="c-container">
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem padding="around-small" size="12">
+                <div>
+                    <p><b><center>Weather in Postal Code {!v.contactRec.MailingPostalCode} today is:{!v.contactRec.Weather_Label__c}</center></b></p>
+                    <p><center>Additional Details: {!v.contactRec.Weather_Description__c}</center></p>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem  padding="around-small" size="12">
+                <div class="custom-box"><lightning:map mapMarkers="{! v.mapMarkers }"
+                                                       zoomLevel = "16"/></div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    
+</aura:component>

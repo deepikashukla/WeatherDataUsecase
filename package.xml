@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ContactTriggerHandler</members>
+        <members>CurrentLocationController</members>
+        <members>CustomException</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ContactTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>CurrentLocationCmp</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Contact.Weather_Alerts_Subscription__c</members>
+        <members>Contact.Weather_Description__c</members>
+        <members>Contact.Weather_Label__c</members>
+        <members>Weather_API__mdt.Endpoint__c</members>
+        <members>Weather_API__mdt.Key__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Weather_API.Weather_By_Zipcode</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Contact_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Contact-Contact Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>WeatherAPI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>47.0</version>
+</Package>
